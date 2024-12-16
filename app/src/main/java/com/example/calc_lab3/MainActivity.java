@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
             findViewById(id).setOnClickListener(listener);
         }
 
-        // Добавляем слушатель для кнопки точки
         findViewById(R.id.btnDot).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnSignChange).setOnClickListener(signChangeListener);
     }
 
-    // Operator listener
     private View.OnClickListener opListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -81,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    // Equals listener
     private View.OnClickListener equalListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -106,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    // Square root listener
     private View.OnClickListener sqrtListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -115,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    // Clear button listener
     private View.OnClickListener clearListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -126,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    // Back button listener
     private View.OnClickListener backListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -137,7 +131,6 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    // Sign change listener
     private View.OnClickListener signChangeListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
