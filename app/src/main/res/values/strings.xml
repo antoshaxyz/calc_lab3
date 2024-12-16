@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">calc_lab3</string>
+    <string name="clear">C</string>
+    <string name="back">←</string>
+    <string name="sqrt">√</string>
+    <string name="divide">/</string>
+    <string name="multiply">*</string>
+    <string name="subtract">-</string>
+    <string name="add">+</string>
+    <string name="sign_change">±</string>
 </resources>

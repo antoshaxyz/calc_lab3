@@ -1,8 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="bottom">
+
+    <!-- Поле для отображения ввода и результатов -->
+    <EditText
+        android:id="@+id/txtDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="32sp"
+        android:inputType="none"
+        android:focusable="false"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Сетка кнопок -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="4"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- First row -->
+        <Button
+            android:id="@+id/btnBack"
+            android:text="@string/back"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:text="@string/clear"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnSignChange"
+            android:text="@string/sign_change"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:text="@string/divide"
+            style="@style/ButtonStyle"/>
+
+        <!-- Second row -->
+        <Button
+            android:id="@+id/btn7"
+            android:text="7"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:text="8"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:text="9"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:text="@string/multiply"
+            style="@style/ButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/btn4"
+            android:text="4"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="5"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="6"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:text="@string/subtract"
+            style="@style/ButtonStyle"/>
+
+        <!-- Fourth row -->
+        <Button
+            android:id="@+id/btn1"
+            android:text="1"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="2"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="3"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:text="@string/add"
+            style="@style/ButtonStyle"/>
+
+        <!-- Fifth row -->
+
+        <Button
+            android:id="@+id/btn0"
+            android:text="0"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnDot"
+            android:text="."
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnSqrt"
+            android:text="@string/sqrt"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnEqual"
+            android:text="="
+            style="@style/ButtonStyle"/>
+    </GridLayout>
+
+</LinearLayout>
